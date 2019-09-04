@@ -103,26 +103,37 @@ Resources
 }
 
 /*以下は、userとstoreの新規登録部分*/
-.main_sign_in {
+.main_sign_up {
   height: 404px;
   width: 960px;
 }
 
-.main_sign_in_bottons {
+.main_sign_up_bottons {
   height: 404px;
   width: 960px;
 }
 
-.main_sign_in_botton {
+.main_sign_up_botton {
   list-style: none;
   height: 102px;
   padding-top: 50px;
 }
 
-.sign_in_botton_text {
+.sign_up_botton_text {
 
 }
 
-.sign_in_botton {
+.sign_up_botton {
 
 }
+
+/*以下は、 new.html.erb の部分*/
+
+.field {
+  padding-bottom: 40px;
+}
+
+
+
+
+
