@@ -16,8 +16,13 @@ body {
 
 Resources
 
+
+
+
+
 /*以下は、獺祭書屋という、タイトルからログインボタンまでの部分、header部分
 */
+
 .header {
   width: 100%;
 }
@@ -47,18 +52,22 @@ Resources
   display: flex;
 }
 
-.users_login_botton {
+.users_login_button {
   list-style: none;
   padding-left: 500px;
 }
 
-.stores_login_botton {
+.stores_login_button {
   list-style: none;
   padding-right: 500px;
   padding-left: 30px;
 }
 
+
+
+
 /*写真やアプリケーションの説明、新規登録部分の全体のブロック*/
+
 .main {
 
 }
@@ -67,6 +76,9 @@ Resources
   margin: 0px 220px;
 }
 
+
+
+
 /*以下は、写真の部分*/
 .main_image {
   height: 404px;
@@ -74,7 +86,10 @@ Resources
 }
 
 
+
+
 /*以下は、本を探そうから、始まっているアプリケーション説明部分*/
+
 .main_text {
   height: 404px;
   width: 960px;
@@ -102,30 +117,37 @@ Resources
   padding-left: 40px;
 }
 
+
+
+
 /*以下は、userとstoreの新規登録部分*/
+
 .main_sign_up {
   height: 404px;
   width: 960px;
 }
 
-.main_sign_up_bottons {
+.main_sign_up_buttons {
   height: 404px;
   width: 960px;
 }
 
-.main_sign_up_botton {
+.main_sign_up_button {
   list-style: none;
   height: 102px;
   padding-top: 50px;
 }
 
-.sign_up_botton_text {
+.sign_up_button_text {
 
 }
 
-.sign_up_botton {
+.sign_up_button {
 
 }
+
+
+
 
 /*以下は、 User及びStore の new.html.erb の部分*/
 
@@ -160,4 +182,26 @@ Resources
     clear: both;
     display: block;
   }
+}
+
+
+
+
+/*以下は、 Store の index.html.erb の部分*/
+
+.stores_logout_button {
+  list-style: none;
+  padding-left: 500px;
+}
+
+.stores_add_books_button {
+  list-style: none;
+  padding-left: 30px;
+}
+
+.stores_edit_books_button {
+  list-style: none;
+  padding-left: 30px;
+}
+
 

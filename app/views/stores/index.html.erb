@@ -1,0 +1,19 @@
+<header class="header">
+  <div class="header_bar">
+    <h1 class="title_name"><p class="title_name_parag">獺祭書屋</p></h1>
+    <div class="nav">
+      <ul class="nav_list">
+        <li class="stores_logout_button">
+          <%= link_to "ログアウト", destroy_store_session_path, class: 'post'%>
+        </li>
+        <li class="stores_add_books_button">
+          <%= link_to "書籍の登録・追加", '/stores/new', class: 'post'%>
+        </li>
+        <li class="stores_edit_books_button">
+          <%= link_to "書籍の在庫増減・削除", '/stores/:id', class: 'post'%>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
