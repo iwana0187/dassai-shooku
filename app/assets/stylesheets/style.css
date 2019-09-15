@@ -205,3 +205,18 @@ Resources
 }
 
 
+
+
+/*以下は、 Book の new.html.erb の部分*/
+
+.users_logout_button {
+  list-style: none;
+  padding-left: 500px;
+}
+
+.books_list_button {
+  list-style: none;
+  padding-right: 500px;
+  padding-left: 30px;
+}
+

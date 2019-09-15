@@ -1,0 +1,15 @@
+<header class="header">
+  <div class="header_bar">
+    <h1 class="title_name"><p class="title_name_parag">獺祭書屋</p></h1>
+    <div class="nav">
+      <ul class="nav_list">
+        <li class="users_logout_button">
+          <%= link_to "users ログアウト", '/users/sign_out', class: 'post'%>
+        </li>
+        <li class="books_list_button">
+          <%= link_to "書棚", '/users/:user_id/books_list_in_favorites', class: 'post'%>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
