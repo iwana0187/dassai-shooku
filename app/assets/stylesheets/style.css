@@ -127,13 +127,37 @@ Resources
 
 }
 
-/*以下は、 new.html.erb の部分*/
+/*以下は、 User及びStore の new.html.erb の部分*/
 
 .field {
   padding-bottom: 40px;
 }
 
+.address_geo_search {
+  padding-top: 20px;
+}
 
+.attention_text {
+  padding: 40px 0px;
+  font-size: 21px;
+}
 
+.geocord {
+  padding-top: 30px;
+}
 
+.actions {
+  padding-top: 50px;
+}
+
+.append_error_MSG {
+  padding: 0 15px;
+  line-height: 50px;
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+  &:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
 
