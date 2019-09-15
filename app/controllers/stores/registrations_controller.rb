@@ -59,3 +59,11 @@ class Stores::RegistrationsController < Devise::RegistrationsController
   # def after_inactive_sign_up_path_for(resource)
   #   super(resource)
   # end
+  before_action :configure_permitted_parameters, if: :devise_controller?
+
+  protected
+
+  def configure_permitted_parameters
+    devise_parameter_sanitizer.permit(:sign_up, keys: [:name, :image, :phone_number, :email, :password, :password_confirmation, :address, :latitude, :longitude])
+  end
+end
