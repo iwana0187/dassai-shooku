@@ -1,2 +1,60 @@
-<h1>Books#index</h1>
-<p>Find me in app/views/books/index.html.erb</p>
+<header class="header">
+  <div class="header_bar">
+    <h1 class="title_name"><p class="title_name_parag">獺祭書屋</p></h1>
+    <div class="nav">
+      <ul class="nav_list">
+        <li class="users_login_botton">
+          <%= link_to "users ログイン", new_user_session_path, class: 'post'%>
+        </li>
+        <li class="stores_login_botton">
+          <%= link_to "stores ログイン", new_store_session_path, class: 'post'%>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+  <div class="main_block">
+    <div class="main_image">
+    </div>
+    <div class="main_text">
+      <div class="main_text_midashi">
+        <p class="main_text_midashi_parag">
+          本を探そう
+        </p>
+      </div>
+      <div class="main_text_honnbunn">
+        <p class="main_text_honnbunn_parag">
+          本を実際に見て購入したいけど、本を探しに書店を回ることが億劫な人<br/>
+          や、仕事をしながら、資格取得などを目指す、忙しいサラリーマン、受<br/>
+          験で多忙な学生、などが効率的に書籍を購入したい時に、書籍を在庫と<br/>
+          して持っている、近くの書店を教えてくれる、アプリケーションです。
+        </p>
+      </div>
+    </div>
+    <div class="main_sign_up">
+      <ul class="main_sign_up_bottons">
+        <li class="main_sign_up_botton">
+          <p class="sign_up_botton_text">
+            本を探されている方
+          </p>
+          <div class="sign_up_botton">
+            <%= link_to "users サインアップ", new_user_registration_path, class: 'post' %>
+          </div>
+        </li>
+        <li class="main_sign_up_botton">
+          <p class="sign_up_botton_text">
+            お店を登録されたい方
+          </p>
+          <div class="sign_up_botton">
+            <%= link_to "stores サインアップ", new_store_registration_path, class: 'post' %>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+</footer>

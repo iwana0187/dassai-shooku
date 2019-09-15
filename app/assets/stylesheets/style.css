@@ -1,0 +1,163 @@
+body {
+  background-color: #fffaf0;
+  text-align: center;
+  font-size: 20px;
+  box-sizing: border-box;
+/*background: url('') fixed;
+  background-size: cover;*/
+}
+
+@font-face {
+  font-family: 'kouzan';
+  src: url('KouzanMouhituFontOTF.otf')format('truetype');
+}
+
+
+
+Resources
+
+/*以下は、獺祭書屋という、タイトルからログインボタンまでの部分、header部分
+*/
+.header {
+  width: 100%;
+}
+
+.header_bar {
+  margin-top: 34px;
+}
+
+.title_name {
+  height: 50px;
+  font-size: 60px;
+  margin-bottom: 26px;
+  border: ;
+  padding-right: 10px;
+}
+
+.title_name_parag {
+  font-family: 'kouzan';
+}
+
+.nav {
+  height: 30px;
+  margin-bottom: 45px;
+}
+
+.nav_list {
+  display: flex;
+}
+
+.users_login_botton {
+  list-style: none;
+  padding-left: 500px;
+}
+
+.stores_login_botton {
+  list-style: none;
+  padding-right: 500px;
+  padding-left: 30px;
+}
+
+/*写真やアプリケーションの説明、新規登録部分の全体のブロック*/
+.main {
+
+}
+
+.main_block {
+  margin: 0px 220px;
+}
+
+/*以下は、写真の部分*/
+.main_image {
+  height: 404px;
+  width: 960px;
+}
+
+
+/*以下は、本を探そうから、始まっているアプリケーション説明部分*/
+.main_text {
+  height: 404px;
+  width: 960px;
+}
+
+.main_text_midashi {
+  margin-top: 34px;
+  margin-bottom: 26px;
+  height: 120px;
+}
+
+.main_text_midashi_parag {
+  padding-top: 50px;
+  padding-left: 40px;
+  font-size: 30px;
+}
+
+.main_text_honnbunn {
+  margin-bottom: 34px;
+  height: 200px;
+}
+
+.main_text_honnbunn_parag {
+  padding-top: 60px;
+  padding-left: 40px;
+}
+
+/*以下は、userとstoreの新規登録部分*/
+.main_sign_up {
+  height: 404px;
+  width: 960px;
+}
+
+.main_sign_up_bottons {
+  height: 404px;
+  width: 960px;
+}
+
+.main_sign_up_botton {
+  list-style: none;
+  height: 102px;
+  padding-top: 50px;
+}
+
+.sign_up_botton_text {
+
+}
+
+.sign_up_botton {
+
+}
+
+/*以下は、 User及びStore の new.html.erb の部分*/
+
+.field {
+  padding-bottom: 40px;
+}
+
+.address_geo_search {
+  padding-top: 20px;
+}
+
+.attention_text {
+  padding: 40px 0px;
+  font-size: 21px;
+}
+
+.geocord {
+  padding-top: 30px;
+}
+
+.actions {
+  padding-top: 50px;
+}
+
+.append_error_MSG {
+  padding: 0 15px;
+  line-height: 50px;
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+  &:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+

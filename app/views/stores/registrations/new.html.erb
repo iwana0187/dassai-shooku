@@ -1,29 +1,68 @@
-<h2>Sign up</h2>
+<div class="contents row">
+  <h2>store 新規登録</h2>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
+  <%= form_for(resource, as: resource_name, url: store_registration_path) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
+    <div class="field">
+      <%= f.label :書店名 %><br />
+      <%= f.text_field :name, autofocus: true %>
+    </div>
 
-  <div class="field">
-    <%= f.label :password %>
-    <% if @minimum_password_length %>
-    <em>(<%= @minimum_password_length %> characters minimum)</em>
-    <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password" %>
-  </div>
+    <div class="field">
+      <%= f.label :書店の写真 %><br />
+      <%= f.file_field :image, class: "file_field"%>
+    </div>
 
-  <div class="field">
-    <%= f.label :password_confirmation %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-  </div>
+    <div class="field">
+      <%= f.label :電話番号（ハイフン除く） %><br />
+      <%= f.telephone_field :phone_number %>
+    </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up" %>
-  </div>
-<% end %>
+    <div class="field">
+      <%= f.label :メールアドレス %><br />
+      <%= f.email_field :email, autocomplete: "email" %>
+    </div>
 
-<%= render "stores/shared/links" %>
+    <div class="field">
+      <%= f.label :パスワード %>
+      <% if @minimum_password_length %>
+      <em>(<%= @minimum_password_length %> 文字以上)</em>
+      <% end %><br />
+      <%= f.password_field :password, autocomplete: "new-password" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :パスワード確認用 %><br />
+      <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :住所 %><br />
+      <div class="address_geo_search">
+        <%= f.text_field :address, id: "address_field"%>
+        <button type="button" class="defalut_btn" id="getgeocode-button">
+          位置情報の取得
+        </button>
+      </div>
+    </div>
+
+    <div class="field">
+      <p class="attention_text">住所を入力したら、位置情報の取得ボタンを押してください。</p>
+    </div>
+
+    <div class="field">
+      <%= f.label :位置情報%>
+      <div class="geocord">
+        <%= f.label :緯度 %>
+        <%= f.text_field :latitude, id: "latitude_field", placeholder: "手入力禁止"%>
+        <%= f.label :経度 %>
+        <%= f.text_field :longitude, id: "longitude_field", placeholder: "手入力禁止"%>
+      </div>
+    </div>
+
+    <div class="actions">
+      <%= f.submit "  登録する  " %>
+    </div>
+  <% end %>
+</div>

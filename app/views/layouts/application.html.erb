@@ -2,12 +2,13 @@
 <html>
   <head>
     <title>DassaiShooku</title>
-    <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=<%= ENV["GOOGLE_CLOUD_PLATFORM_API_KEY"] %>"async defer>
+    </script>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= csrf_meta_tags %>
   </head>
-
   <body>
     <%= yield %>
   </body>
